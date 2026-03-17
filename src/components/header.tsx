@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import './globals.css'
 
 export function Header() {
   return (
@@ -31,20 +30,5 @@ export function Header() {
         </ul>
       </header>
     </div>
-  )
-}
-
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
-  return (
-    <html lang="en">
-      <body>
-        <Header />
-        {children}
-      </body>
-    </html>
   )
 }
